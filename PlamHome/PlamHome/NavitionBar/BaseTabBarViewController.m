@@ -7,6 +7,8 @@
 //
 
 #import "BaseTabBarViewController.h"
+#import "BaseNavigationViewController.h"
+
 #import "HomePageViewController.h"
 #import "HomePage2ViewController.h"
 #import "HomePage3ViewController.h"
@@ -18,6 +20,7 @@
 
 @implementation BaseTabBarViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -27,20 +30,9 @@
     backImage = [backImage stretchableImageWithLeftCapWidth:backImage.size.width/2 topCapHeight:backImage.size.height/2];
     [self.tabBar setBackgroundImage:backImage];
     
+    self.tabBar.translucent = NO;
     
-    HomePageViewController *homePage1 = [[HomePageViewController alloc]init];
-    homePage1.view.backgroundColor = [UIColor redColor];
-    
-    HomePage2ViewController *homePage2 = [[HomePage2ViewController alloc]init];
-    homePage2.view.backgroundColor = [UIColor grayColor];
-    
-    HomePage3ViewController *homePage3 = [[HomePage3ViewController alloc]init];
-    homePage3.view.backgroundColor = [UIColor greenColor];
-    
-    HomePage4ViewController *homePage4 = [[HomePage4ViewController alloc]init];
-    homePage4.view.backgroundColor = [UIColor blueColor];
-    
-    self.viewControllers = @[homePage1,homePage2,homePage3,homePage4];
+    self.viewControllers = [self barItemViews];
     
     //设置选中的背景图片
     
@@ -78,27 +70,37 @@
                 break;
         }
         
-        //        UIImage *img = [self scaleImage:bg toScale:0.6];
         item.image =bg;
         [item setImageInsets:UIEdgeInsetsMake(8, 0, -8, 0)];
+        [item setTitle:nil];
     }
     
     [self.tabBar setBackgroundColor:[UIColor whiteColor]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
+#pragma mark - 初始化当前TabBar集合
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSArray*)barItemViews{
+    NSArray *arrayItem = [[NSArray alloc]init];
+    HomePageViewController *homePage1 = [[HomePageViewController alloc]init];
+    homePage1.view.backgroundColor = COLOR_BACKGROUND;
+    BaseNavigationViewController *baseNavi1 = [[BaseNavigationViewController alloc]initWithRootViewController:homePage1];
+    
+    HomePage2ViewController *homePage2 = [[HomePage2ViewController alloc]init];
+    homePage2.view.backgroundColor = COLOR_BACKGROUND;
+    BaseNavigationViewController *baseNavi2 = [[BaseNavigationViewController alloc]initWithRootViewController:homePage2];
+    
+    HomePage3ViewController *homePage3 = [[HomePage3ViewController alloc]init];
+    homePage3.view.backgroundColor = COLOR_BACKGROUND;
+    BaseNavigationViewController *baseNavi3 = [[BaseNavigationViewController alloc]initWithRootViewController:homePage3];
+    
+    HomePage4ViewController *homePage4 = [[HomePage4ViewController alloc]init];
+    homePage4.view.backgroundColor = COLOR_BACKGROUND;
+    BaseNavigationViewController *baseNavi4 = [[BaseNavigationViewController alloc]initWithRootViewController:homePage4];
+    
+    arrayItem = @[baseNavi1,baseNavi2,baseNavi3,baseNavi4];
+    return arrayItem;
 }
-*/
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "HomePageViewController.h"
+#import "dViewViewController.h"
 
 @interface HomePageViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.title = @"首页";
+    //删除naviBar左侧按钮
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (void)didReceiveMemoryWarning {

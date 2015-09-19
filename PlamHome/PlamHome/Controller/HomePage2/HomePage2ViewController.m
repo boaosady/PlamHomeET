@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"发现";
+    self.navigationItem.leftBarButtonItem = nil;
     // Do any additional setup after loading the view.
 }
 

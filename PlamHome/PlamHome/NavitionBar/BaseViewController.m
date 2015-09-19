@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = COLOR_BACKGROUND;
+    
+    //设置左侧后退按钮
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"navi_default_back"] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonClick:)];
+    leftButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = leftButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +40,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)leftBarButtonClick:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

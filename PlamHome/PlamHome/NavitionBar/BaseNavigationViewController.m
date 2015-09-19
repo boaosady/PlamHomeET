@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //设置navi的背景图片
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"bgcolor.png"]  forBarMetrics:UIBarMetricsDefault];
+    //设置navi的title 文字颜色
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationBar.translucent = NO;
+    
     
     
 }
@@ -26,6 +32,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 /*
 #pragma mark - Navigation

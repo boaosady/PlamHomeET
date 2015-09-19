@@ -6,8 +6,8 @@
 //  Copyright © 2015年 Evan. All rights reserved.
 //
 
-#import "BaseNavigationViewController.h"
+#import "BaseViewController.h"
 
-@interface HomePage3ViewController : BaseNavigationViewController
+@interface HomePage3ViewController : BaseViewController
 
 @end

@@ -8,42 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		0892E721F619C11C4568D8FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2941A3B3720A5C90485765 /* libPods.a */; };
+		201C8CC11BAD0668009469C0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201C8CC01BAD0668009469C0 /* BaseViewController.m */; };
+		201C8CC41BAD07E8009469C0 /* dViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201C8CC31BAD07E8009469C0 /* dViewViewController.m */; };
+		204281B31BAD6C0E0098EF8B /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204281B21BAD6C0E0098EF8B /* Launch Screen.xib */; };
 		205DCF741BAC481F006AA13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DCF731BAC481F006AA13A /* main.m */; };
 		205DCF771BAC481F006AA13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DCF761BAC481F006AA13A /* AppDelegate.m */; };
 		205DCF7D1BAC481F006AA13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205DCF7B1BAC481F006AA13A /* Main.storyboard */; };
 		205DCF7F1BAC481F006AA13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205DCF7E1BAC481F006AA13A /* Assets.xcassets */; };
-		205DCF821BAC481F006AA13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205DCF801BAC481F006AA13A /* LaunchScreen.storyboard */; };
-		205DCF8C1BAC4BDB006AA13A /* HomeindexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DCF8B1BAC4BDB006AA13A /* HomeindexView.m */; settings = {ASSET_TAGS = (); }; };
-		2073125A1BAC5721008A0E97 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312561BAC5721008A0E97 /* 1.png */; settings = {ASSET_TAGS = (); }; };
-		2073125B1BAC5721008A0E97 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312571BAC5721008A0E97 /* 2.png */; settings = {ASSET_TAGS = (); }; };
-		2073125C1BAC5721008A0E97 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312581BAC5721008A0E97 /* 3.png */; settings = {ASSET_TAGS = (); }; };
-		2073125D1BAC5721008A0E97 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312591BAC5721008A0E97 /* 4.png */; settings = {ASSET_TAGS = (); }; };
-		2073125F1BAC5D20008A0E97 /* b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073125E1BAC5D20008A0E97 /* b@2x.png */; settings = {ASSET_TAGS = (); }; };
-		207312631BAC5EA0008A0E97 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312621BAC5EA0008A0E97 /* BaseTabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
-		207312681BAC7356008A0E97 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312671BAC7356008A0E97 /* BaseNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2073126B1BAC737B008A0E97 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2073126A1BAC737B008A0E97 /* HomePageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2073126F1BAC7FF9008A0E97 /* HomePage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2073126E1BAC7FF9008A0E97 /* HomePage2ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		207312761BAC821A008A0E97 /* bgcolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312711BAC821A008A0E97 /* bgcolor.png */; settings = {ASSET_TAGS = (); }; };
-		207312771BAC821A008A0E97 /* bottom_d@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312721BAC821A008A0E97 /* bottom_d@2x.png */; settings = {ASSET_TAGS = (); }; };
-		207312781BAC821A008A0E97 /* bottom_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312731BAC821A008A0E97 /* bottom_h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		207312791BAC821A008A0E97 /* bottom_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312741BAC821A008A0E97 /* bottom_m@2x.png */; settings = {ASSET_TAGS = (); }; };
-		2073127A1BAC821A008A0E97 /* bottom_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312751BAC821A008A0E97 /* bottom_s@2x.png */; settings = {ASSET_TAGS = (); }; };
-		2073127E1BAC8260008A0E97 /* bottom_tx_ip6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127B1BAC8260008A0E97 /* bottom_tx_ip6.png */; settings = {ASSET_TAGS = (); }; };
-		2073127F1BAC8260008A0E97 /* bottom_tx_ip6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127C1BAC8260008A0E97 /* bottom_tx_ip6p.png */; settings = {ASSET_TAGS = (); }; };
-		207312801BAC8260008A0E97 /* bottom_tx.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127D1BAC8260008A0E97 /* bottom_tx.png */; settings = {ASSET_TAGS = (); }; };
-		207312851BAC8351008A0E97 /* HomePage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312841BAC8351008A0E97 /* HomePage3ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		207312881BAC8361008A0E97 /* HomePage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312871BAC8361008A0E97 /* HomePage4ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		205DCF8C1BAC4BDB006AA13A /* HomeindexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DCF8B1BAC4BDB006AA13A /* HomeindexView.m */; };
+		2073125A1BAC5721008A0E97 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312561BAC5721008A0E97 /* 1.png */; };
+		2073125B1BAC5721008A0E97 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312571BAC5721008A0E97 /* 2.png */; };
+		2073125C1BAC5721008A0E97 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312581BAC5721008A0E97 /* 3.png */; };
+		2073125D1BAC5721008A0E97 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312591BAC5721008A0E97 /* 4.png */; };
+		2073125F1BAC5D20008A0E97 /* b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073125E1BAC5D20008A0E97 /* b@2x.png */; };
+		207312631BAC5EA0008A0E97 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312621BAC5EA0008A0E97 /* BaseTabBarViewController.m */; };
+		207312681BAC7356008A0E97 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312671BAC7356008A0E97 /* BaseNavigationViewController.m */; };
+		2073126B1BAC737B008A0E97 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2073126A1BAC737B008A0E97 /* HomePageViewController.m */; };
+		2073126F1BAC7FF9008A0E97 /* HomePage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2073126E1BAC7FF9008A0E97 /* HomePage2ViewController.m */; };
+		207312761BAC821A008A0E97 /* bgcolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312711BAC821A008A0E97 /* bgcolor.png */; };
+		207312771BAC821A008A0E97 /* bottom_d@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312721BAC821A008A0E97 /* bottom_d@2x.png */; };
+		207312781BAC821A008A0E97 /* bottom_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312731BAC821A008A0E97 /* bottom_h@2x.png */; };
+		207312791BAC821A008A0E97 /* bottom_m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312741BAC821A008A0E97 /* bottom_m@2x.png */; };
+		2073127A1BAC821A008A0E97 /* bottom_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207312751BAC821A008A0E97 /* bottom_s@2x.png */; };
+		2073127E1BAC8260008A0E97 /* bottom_tx_ip6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127B1BAC8260008A0E97 /* bottom_tx_ip6.png */; };
+		2073127F1BAC8260008A0E97 /* bottom_tx_ip6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127C1BAC8260008A0E97 /* bottom_tx_ip6p.png */; };
+		207312801BAC8260008A0E97 /* bottom_tx.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073127D1BAC8260008A0E97 /* bottom_tx.png */; };
+		207312851BAC8351008A0E97 /* HomePage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312841BAC8351008A0E97 /* HomePage3ViewController.m */; };
+		207312881BAC8361008A0E97 /* HomePage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207312871BAC8361008A0E97 /* HomePage4ViewController.m */; };
+		20F1DBAB1BAD628000B1836D /* navi_default_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F1DBAA1BAD628000B1836D /* navi_default_back@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18AD1CCFEAA5B3F4772A1FE4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		201C8CBF1BAD0668009469C0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		201C8CC01BAD0668009469C0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		201C8CC21BAD07E8009469C0 /* dViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dViewViewController.h; sourceTree = "<group>"; };
+		201C8CC31BAD07E8009469C0 /* dViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dViewViewController.m; sourceTree = "<group>"; };
+		204281B21BAD6C0E0098EF8B /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		205DCF6F1BAC481F006AA13A /* PlamHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlamHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205DCF731BAC481F006AA13A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		205DCF751BAC481F006AA13A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		205DCF761BAC481F006AA13A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		205DCF7C1BAC481F006AA13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		205DCF7E1BAC481F006AA13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		205DCF811BAC481F006AA13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205DCF831BAC481F006AA13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205DCF8A1BAC4BDB006AA13A /* HomeindexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeindexView.h; sourceTree = "<group>"; };
 		205DCF8B1BAC4BDB006AA13A /* HomeindexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeindexView.m; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		207312841BAC8351008A0E97 /* HomePage3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePage3ViewController.m; sourceTree = "<group>"; };
 		207312861BAC8361008A0E97 /* HomePage4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePage4ViewController.h; sourceTree = "<group>"; };
 		207312871BAC8361008A0E97 /* HomePage4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePage4ViewController.m; sourceTree = "<group>"; };
+		20F1DBAA1BAD628000B1836D /* navi_default_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_default_back@2x.png"; sourceTree = "<group>"; };
 		8D2941A3B3720A5C90485765 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6780282194FB1C6DB7601B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,9 +135,9 @@
 				205DCF8E1BAC4D58006AA13A /* PrefixHeader.pch */,
 				205DCF7B1BAC481F006AA13A /* Main.storyboard */,
 				205DCF7E1BAC481F006AA13A /* Assets.xcassets */,
-				205DCF801BAC481F006AA13A /* LaunchScreen.storyboard */,
 				205DCF831BAC481F006AA13A /* Info.plist */,
 				205DCF731BAC481F006AA13A /* main.m */,
+				204281B21BAD6C0E0098EF8B /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 				207312621BAC5EA0008A0E97 /* BaseTabBarViewController.m */,
 				207312661BAC7356008A0E97 /* BaseNavigationViewController.h */,
 				207312671BAC7356008A0E97 /* BaseNavigationViewController.m */,
+				201C8CBF1BAD0668009469C0 /* BaseViewController.h */,
+				201C8CC01BAD0668009469C0 /* BaseViewController.m */,
 			);
 			path = NavitionBar;
 			sourceTree = "<group>";
@@ -191,6 +201,8 @@
 			children = (
 				207312691BAC737B008A0E97 /* HomePageViewController.h */,
 				2073126A1BAC737B008A0E97 /* HomePageViewController.m */,
+				201C8CC21BAD07E8009469C0 /* dViewViewController.h */,
+				201C8CC31BAD07E8009469C0 /* dViewViewController.m */,
 			);
 			name = "Home_首页";
 			path = HomePage;
@@ -209,6 +221,7 @@
 		207312701BAC81CC008A0E97 /* homeImage */ = {
 			isa = PBXGroup;
 			children = (
+				20F1DBAA1BAD628000B1836D /* navi_default_back@2x.png */,
 				2073127B1BAC8260008A0E97 /* bottom_tx_ip6.png */,
 				2073127C1BAC8260008A0E97 /* bottom_tx_ip6p.png */,
 				2073127D1BAC8260008A0E97 /* bottom_tx.png */,
@@ -318,14 +331,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				207312801BAC8260008A0E97 /* bottom_tx.png in Resources */,
-				205DCF821BAC481F006AA13A /* LaunchScreen.storyboard in Resources */,
 				207312791BAC821A008A0E97 /* bottom_m@2x.png in Resources */,
 				2073127A1BAC821A008A0E97 /* bottom_s@2x.png in Resources */,
 				2073127F1BAC8260008A0E97 /* bottom_tx_ip6p.png in Resources */,
 				2073125D1BAC5721008A0E97 /* 4.png in Resources */,
+				20F1DBAB1BAD628000B1836D /* navi_default_back@2x.png in Resources */,
 				2073125A1BAC5721008A0E97 /* 1.png in Resources */,
 				207312761BAC821A008A0E97 /* bgcolor.png in Resources */,
 				2073125B1BAC5721008A0E97 /* 2.png in Resources */,
+				204281B31BAD6C0E0098EF8B /* Launch Screen.xib in Resources */,
 				2073125C1BAC5721008A0E97 /* 3.png in Resources */,
 				207312781BAC821A008A0E97 /* bottom_h@2x.png in Resources */,
 				205DCF7F1BAC481F006AA13A /* Assets.xcassets in Resources */,
@@ -377,9 +391,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				207312681BAC7356008A0E97 /* BaseNavigationViewController.m in Sources */,
+				201C8CC11BAD0668009469C0 /* BaseViewController.m in Sources */,
 				205DCF8C1BAC4BDB006AA13A /* HomeindexView.m in Sources */,
 				2073126F1BAC7FF9008A0E97 /* HomePage2ViewController.m in Sources */,
 				207312631BAC5EA0008A0E97 /* BaseTabBarViewController.m in Sources */,
+				201C8CC41BAD07E8009469C0 /* dViewViewController.m in Sources */,
 				2073126B1BAC737B008A0E97 /* HomePageViewController.m in Sources */,
 				207312851BAC8351008A0E97 /* HomePage3ViewController.m in Sources */,
 				207312881BAC8361008A0E97 /* HomePage4ViewController.m in Sources */,
@@ -397,14 +413,6 @@
 				205DCF7C1BAC481F006AA13A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		205DCF801BAC481F006AA13A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				205DCF811BAC481F006AA13A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -498,6 +506,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PlamHome/PrefixHeader.pch;
 				INFOPLIST_FILE = PlamHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jade.PlamHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +521,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PlamHome/PrefixHeader.pch;
 				INFOPLIST_FILE = PlamHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jade.PlamHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
