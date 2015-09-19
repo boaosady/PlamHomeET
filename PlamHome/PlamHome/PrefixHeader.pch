@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  PlamHome
+//
+//  Created by Evan on 15/9/18.
+//  Copyright © 2015年 Evan. All rights reserved.
+//
+
+#define PrefixHeader_pch
+
+//图片缓存
+#import "UIImageView+WebCache.h"
+
+//上下拉刷新
+#import "MJRefresh.h"
+
+#import "UIScrollView+MJRefresh.h"
+
+#define WS __weak typeof(self) weakSelf = self;
+
+#ifndef UncutJade_PrefixHeader_pch
+#define UncutJade_PrefixHeader_pch
+
+#define BaseURL     @"http://123.57.164.32/Data/"
+
+//搜索对象的key
+#define USER_SEARCH_LIST @"user_search_history"
+
+//设定rgb
+#define DEF_COLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+//是否为iphone4
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+
+//是否为iphone5
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+//是否为iphone6
+#define IS_IPHONE_6 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )667 ) < DBL_EPSILON )
+
+//是否为iphone6Plus
+#define IS_IPHONE_6PLUS ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736 ) < DBL_EPSILON )
+
+
+//判断设备型号
+#define isIos7  ([[[UIDevice currentDevice] systemVersion] floatValue]>=7.0&& [[[UIDevice currentDevice] systemVersion] floatValue]<8.0)
+#define isIos8  ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0)
+
+#define CGRECT_HAVE_NAV(x,y,w,h) CGRectMake((x), (y+(isIos7?44:44)), (w), (h))
+#define UIColorFromRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+
+//判断网络，YES：网络正常，NO：网络异常
+#define isNetWorking [XSNetworkStatus sharedInstance].netStatus!=0
+//版本号
+#define kVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define LCFromRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define COLOR_BACKGROUND  LCFromRGB(230,230,230)      //背景颜色--灰色
+#define COLOR_MAIN  LCFromRGB(43,104,190)            //主题颜色--蓝色
+#define clickColor  LCFromRGB(44,144,232)           //浅蓝色
+
+//获取屏幕宽度
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+//获取屏幕高度
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define APP_DELEGATE    ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#endif /* PrefixHeader_pch */
